@@ -1,0 +1,7 @@
+@import "tailwindcss";
+@import "../static/css/fonts.css";
+
+@theme {
+    --font-sans: Sherpa, "ui-sans-serif", "system-ui", "sans-serif", "Apple Color Emoji",
+        "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
