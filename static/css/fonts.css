@@ -111,8 +111,37 @@
 }
 
 @font-face {
-    font-family: 'LabG-Mono';
-    src: url('../fonts/LabGrotesqueMono/LabGrotesqueMono.woff2') format('woff2');
+    font-family: 'LabGrotesque';
+    src: url('../fonts/LabGrotesque/LabGrotesque-Lt-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LabGrotesque';
+    src: url('../fonts/LabGrotesque/LabGrotesque-Lt-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LabGrotesque';
+    src: url('../fonts/LabGrotesque/LabGrotesque-Lt-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LabGrotesque-Mono';
+    src: url('../fonts/LabGrotesque/LabGrotesqueMono.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* font-title */
+@font-face {
+    font-family: 'Integral';
+    src: url('../fonts/integral.woff2') format('woff2');
     font-weight: 400;
     font-style: normal;
 }
