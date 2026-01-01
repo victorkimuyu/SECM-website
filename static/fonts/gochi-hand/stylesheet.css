@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Gochi Hand';
+    src: url('GochiHand-Regular.eot');
+    src: local('Gochi Hand'), local('GochiHand-Regular'),
+        url('GochiHand-Regular.eot?#iefix') format('embedded-opentype'),
+        url('GochiHand-Regular.woff2') format('woff2'),
+        url('GochiHand-Regular.woff') format('woff'),
+        url('GochiHand-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+

@@ -8,10 +8,11 @@
     --color-brand-orange-dark: #f97316;
 
     /* Font Families */
-    --font-sans: LabGrotesque, "ui-sans-serif", "system-ui", "sans-serif", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-sans: "Nunito Sans", "ui-sans-serif", "system-ui", "sans-serif", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-serif: RecklessNueue, "Bitstream Charter", "Sitka Text", "Cambria", "serif";
     --font-mono: LabGrotesque-Mono, "ui-monospace", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     --font-display: Integral, "ui-sans-serif", "system-ui", "sans-serif", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-hand: GochiHand, "Segoe Print", "Bradley Hand", "Chilanka", "TSCu_Comic", "casual", "cursive";
 
     /* Animation */
     --animate-blob: blob 7s infinite;

@@ -7,7 +7,16 @@
     <title>SEC & M Valuers</title>
     <link rel="icon" type="image/x-icon" href="favicon.svg">
     <link rel="stylesheet" href="./static/css/global.css">
+
+    <style>
+        .services-card {
+            border-top-right-radius: 24px;
+            corner-shape: bevel;
+        }
+    </style>
 </head>
+
+
 
 <body>
 
@@ -23,24 +32,24 @@
                     </a>
                 </div>
                 <div class="hidden md:block">
-                    <div class="ml-10 flex items-center space-x-6">
+                    <div class="ml-10 flex items-center space-x-6 text-[13px] tracking-wide">
                         <a href="index.html"
-                            class="px-3 py-2 font-medium text-sm tracking-wide hover:text-pink-600 transition-colors">HOME</a>
+                            class="py-1 font-medium tracking-wide hover:text-pink-600 transition-colors text-orange-200 border-b-4 border-orange-200">SEC
+                            & M.</a>
                         <a href="about_us.html"
-                            class="px-3 py-2 font-medium text-sm tracking-wide hover:text-pink-600 transition-colors">ABOUT
+                            class="py-1 font-medium tracking-wide hover:text-pink-600 transition-colors">ABOUT
                             US</a>
                         <a href="services.html"
-                            class="px-3 py-2 font-medium text-sm tracking-wide hover:text-pink-600 transition-colors">SERVICES</a>
+                            class="py-1 font-medium tracking-wide hover:text-pink-600 transition-colors">SERVICES</a>
                         <a href="clients.html"
-                            class="px-3 py-2 font-medium text-sm tracking-wider hover:text-pink-600 transition-colors">OUR
+                            class="py-1 font-medium tracking-wider hover:text-pink-600 transition-colors">OUR
                             CLIENTS</a>
                         <a href="contact_us.html"
-                            class="flex items-center gap-2 px-3 py-2 font-medium text-sm tracking-wide hover:text-pink-600 transition-colors">
+                            class="flex items-center gap-2 px-3 py-3 text-white font-medium tracking-wide hover:bg-pink-600 hover:text-white transition-colors">
                             <svg class="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1"
-                                viewBox="0 0 24 24">
+                                viewBox="0 0 24 24" stroke-width="0.25" stroke="currentColor">
                                 <path
-                                    d="M24 13.78V24h-.89C10.38 24 0 13.62 0 .89V0h10.22v9.2l-4.31 4.31c1.42 1.91 3.13 3.58 5.11 4.93l4.67-4.67H24M8.45 8.47V1.78H1.8C1.96 5.52 3.07 9 4.91 12l3.53-3.53Zm7.97 7.08-3.87 3.87c2.87 1.64 6.15 2.64 9.67 2.78v-6.65h-5.8Z"
-                                    style="stroke-width:0" />
+                                    d="M24 13.78V24h-.89C10.38 24 0 13.62 0 .89V0h10.22v9.2l-4.31 4.31c1.42 1.91 3.13 3.58 5.11 4.93l4.67-4.67H24M8.45 8.47V1.78H1.8C1.96 5.52 3.07 9 4.91 12l3.53-3.53Zm7.97 7.08-3.87 3.87c2.87 1.64 6.15 2.64 9.67 2.78v-6.65h-5.8Z" />
                             </svg>
                             GET IN TOUCH</a>
                     </div>
@@ -53,7 +62,7 @@
     <header class="relative w-full h-screen flex flex-col text-center text-white overflow-hidden">
         <!-- Background Image with Overlay -->
         <div class="absolute inset-0 z-0">
-            <div style="background-image: url('./static/images/nairobi.png')"
+            <div style="background-image: url('./static/images/nairobi.jpg')"
                 class="w-full h-full bg-slate-900 bg-cover bg-center">
                 <div class="absolute inset-0 bg-indigo-800/50 bg-blend-overlay"></div>
             </div>
@@ -62,12 +71,12 @@
         <!-- Hero Content -->
         <div class="relative z-10 max-w-4xl mt-28 mx-auto px-4 sm:px-6 lg:px-8">
             <h3 id="hero-title"
-                class="text-[44px] font-serif font-bold leading-tight text-white max-w-4xl mx-auto mb-8 transition-all duration-1000 ease-in-out -translate-y-10">
-                Expert property valuations,<br> bankable insights.
+                class="text-[36px] font-serif font-bold leading-tight text-white max-w-4xl mx-auto mb-8 transition-all duration-1000 ease-in-out -translate-y-10">
+                Expert property valuations,<br>bankable insights
             </h3>
             <h4 id="hero-subtitle"
-                class="text-white text-2xl transition-all duration-700 ease-in-out -translate-y-10 delay-300">
-                Sound asset value insights for informed financial and planning decisions
+                class="text-white text-xl font-medium transition-all duration-700 ease-in-out -translate-y-10 delay-300">
+                Professional asset valuations for informed planning and financial decisions.
             </h4>
 
         </div>
@@ -78,7 +87,7 @@
 
                 <!-- Card 1: Residential -->
                 <div
-                    class="relative flex-1 flex flex-row group bg-slate-50 border border-white/30 hover:bg-brand-pink/80 cursor-pointer overflow-hidden">
+                    class="services-card relative flex-1 flex flex-row group bg-slate-50 border border-white/30 hover:bg-brand-pink/80 cursor-pointer overflow-hidden">
                     <!-- Thumbnail (35%) -->
                     <div
                         class="w-[40%] shrink-0 bg-white bg-[url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80')] bg-cover bg-center">
@@ -87,7 +96,7 @@
                     <div class="relative flex-1 p-4 md:p-5 text-left flex flex-col justify-center">
                         <h3 class="text-black group-hover:text-white text-sm md:text-base font-bold mb-2 leading-tight">
                             Residential Properties</h3>
-                        <p class="text-gray-900 group-hover:text-white/90 text-base line-clamp-3">Apartment
+                        <p class="text-gray-900 group-hover:text-white/90 text-sm line-clamp-3">Apartment
                             blocks, housing developments, and private estates.</p>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                             height="20" class="absolute right-4 bottom-3 stroke-pink-800 group-hover:stroke-white">
@@ -99,7 +108,7 @@
 
                 <!-- Card 2: Commercial -->
                 <div
-                    class="relative flex-1 flex flex-row group bg-slate-50 border border-white/30 hover:bg-brand-pink/80 cursor-pointer overflow-hidden">
+                    class="services-card relative flex-1 flex flex-row group bg-slate-50 border border-white/30 hover:bg-brand-pink/80 cursor-pointer overflow-hidden">
                     <!-- Thumbnail (35%) -->
                     <div
                         class="w-[40%] shrink-0 bg-white bg-[url('https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80')] bg-cover bg-center">
@@ -109,7 +118,7 @@
                         <h3
                             class="text-black group-hover:text-white text-base md:text-base font-bold mb-2 leading-tight">
                             Commercial Properties</h3>
-                        <p class="text-gray-900 group-hover:text-white text-base line-clamp-3">Office
+                        <p class="text-gray-900 group-hover:text-white text-sm line-clamp-3">Office
                             buildings, retail shopping centers, and complexes.</p>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                             height="20" class="absolute right-4 bottom-3 stroke-pink-800 group-hover:stroke-white">
@@ -121,17 +130,16 @@
 
                 <!-- Card 3: Industrial -->
                 <div
-                    class="relative flex-1 flex flex-row group bg-slate-50 border border-white/30 hover:bg-brand-pink/80 cursor-pointer overflow-hidden">
+                    class="services-card relative flex-1 flex flex-row group bg-slate-50 border border-white/30 hover:bg-brand-pink/80 cursor-pointer overflow-hidden">
                     <!-- Thumbnail (35%) -->
                     <div
                         class="w-[40%] shrink-0 bg-slate-200 bg-[url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80')] bg-cover bg-center">
                     </div>
                     <!-- Content -->
                     <div class="flex-1 p-4 md:p-5 text-left flex flex-col justify-center">
-                        <h3
-                            class="text-black group-hover:text-white text-base md:text-base font-bold mb-2 leading-tight">
+                        <h3 class="text-black group-hover:text-white font-semibold mb-2 leading-tight">
                             Industrial Machinery</h3>
-                        <p class="text-gray-900 group-hover:text-white/90 text-base">Industrial
+                        <p class="text-gray-900 group-hover:text-white/90 text-sm">Industrial
                             installations, power generation, and specialized equipment.</p>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                             height="20" class="absolute right-4 bottom-3 stroke-pink-800 group-hover:stroke-white">
@@ -176,9 +184,9 @@
                         <div
                             class="absolute -bottom-20 -left-40 w-96 h-96 bg-blue-300 rounded-full mix-blend-screen filter blur-3xl opacity-20 -z-10">
                         </div>
-                        <span class="text-pink-700 font-mono text-sm tracking-widest uppercase mb-4 block">About
-                            us</span>
-                        <h2 class="text-2xl md:text-3xl font-serif font-bold text-slate-900 mb-3 mb-6 leading-tight">
+                        <span class="text-pink-700 tracking-widest uppercase mb-4 block font-bold">COMPETENCE,
+                            SERVICE, SOLUTION</span>
+                        <h2 class="text-2xl md:text-3xl font-serif font-bold text-slate-900 mb-6 leading-tight">
                             A Legacy of Trust, Dependable Expertise
                         </h2>
                         <div class="w-20 h-1 bg-brand-orange-dark mb-8"></div>
@@ -191,8 +199,8 @@
                         </p>
 
                         <a href="about_us.html"
-                            class="flex group text-base w-[160px] justify-between items-center px-6 py-2.5 font-medium border-2 border-brand-pink text-brand-pink hover:bg-brand-pink hover:text-white transition-all duration-300">
-                            Read More
+                            class="flex group text-lg w-[160px] justify-between items-center px-6 py-2.5 font-medium border-2 border-brand-pink text-brand-pink hover:bg-brand-pink hover:text-white transition-all duration-300">
+                            About us
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" aria-hidden="true" viewBox="0 0 24 24"
                                 role="img"
                                 class="size-4 stroke-pink-700 group-hover:translate-x-1 group-hover:stroke-white transition-all duration-300">
@@ -224,7 +232,7 @@
         </section>
 
         <!-- Why Choose Us Section -->
-        <section class="pt-10 border-t border-slate-300 relative overflow-hidden bg-slate-100">
+        <section class="pt-10 border-t border-slate-300 relative overflow-hidden bg-blue-50">
 
             <!-- Background Blobs -->
             <div class="absolute inset-0 overflow-hidden pointer-events-none">
@@ -233,10 +241,10 @@
 
                 <!-- Bottom Left Blob -->
                 <div
-                    class="absolute -bottom-74 -left-80 w-[540px] h-[800px] bg-blue-100 rounded-full mix-blend-multiply filter blur-3xl opacity-50">
+                    class="absolute -bottom-74 -left-80 w-[540px] h-[800px] bg-blue-100 rounded-full mix-blend-screen filter blur-3xl opacity-50">
                 </div>
                 <div
-                    class="absolute bottom-200 left-[800px] w-[540px] h-[800px] bg-orange-200 rounded-full filter blur-2xl opacity-50">
+                    class="absolute bottom-200 left-[calc(var(--view-width)/2-500px)] w-[1000px] h-[1000px] bg-blue-400 rounded-full filter blur-2xl">
                 </div>
             </div>
 
@@ -244,14 +252,13 @@
 
                 <!-- Section Header -->
                 <div class="text-center max-w-3xl mx-auto mb-16">
-                    <span class="text-pink-700 font-medium tracking-wider mb-3 block">Why SEC &
+                    <span class="text-pink-700 font-medium text-lg mb-3 block">Why SEC &
                         M.</span>
                     <h2 class="text-3xl md:text-4xl font-serif font-bold text-slate-900 mb-6">
                         Excellence in <span class="relative inline-block">Every
-                            <svg class="absolute w-full h-3 -bottom-2 left-0 text-gray-800" viewBox="0 0 100 10"
+                            <svg class="absolute w-full h-3 -bottom-2 left-0 stroke-sky-700" viewBox="0 0 100 10"
                                 preserveAspectRatio="none">
-                                <path d="M 2 9 Q 35 2 65 9" stroke="currentColor" stroke-width="3" fill="none"
-                                    stroke-linecap="round" />
+                                <path d="M 2 9 Q 35 2 65 9" stroke-width="3" fill="none" stroke-linecap="round" />
                             </svg>
                         </span> Engagement
                     </h2>
@@ -264,7 +271,7 @@
 
                 <!-- Features Grid -->
                 <div class="grid grid-cols-1 pb-16 md:grid-cols-3 gap-20">
-                    <!-- Feature 3: 20+ Years -->
+                    <!-- Feature 1: 20+ Years -->
                     <div class="group">
                         <div class="flex items-end h-40 mb-4">
                             <img src="static/images/20_years_experience_illustration_.png"
@@ -276,7 +283,7 @@
                             standards to deliver reliable reports.
                         </p>
                         <a href="about_us.html"
-                            class="group flex justify-end gap-1 items-center font-medium text-sm hover:text-pink-700 duration-300 mt-5 text-pink-700">
+                            class="group flex justify-end gap-1 items-center font-medium text-sm tracking-wide tracking-wide tracking-wide hover:text-pink-700 duration-300 mt-5 text-pink-700">
                             About us
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" aria-hidden="true" viewBox="0 0 24 24"
                                 role="img"
@@ -288,7 +295,7 @@
                         </a>
                     </div>
 
-                    <!-- Feature 1: Our services -->
+                    <!-- Feature 2: Our services -->
                     <div class="group">
                         <div class="h-40 mb-4">
                             <img src="static/images/org_capacity_illustration_.png" alt="Our services">
@@ -300,7 +307,7 @@
                             multi-million dollar infrastructure.
                         </p>
                         <a href="services.html"
-                            class="group flex justify-end gap-1 items-center font-medium hover:text-pink-700 duration-300 mt-5 text-pink-700">
+                            class="group flex justify-end gap-1 items-center font-medium text-sm tracking-wide tracking-wide tracking-wide hover:text-pink-700 duration-300 mt-5 text-pink-700">
                             Our services
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" aria-hidden="true" viewBox="0 0 24 24"
                                 role="img"
@@ -312,7 +319,7 @@
                         </a>
                     </div>
 
-                    <!-- Feature 2: Who we serve -->
+                    <!-- Feature 3: Who we serve -->
                     <div class="group">
                         <div class="flex items-end h-40 mb-4">
                             <img src="static/images/in_good_company_illustration_.png" alt="Who we serve">
@@ -322,7 +329,7 @@
                             brands and critical public institutions.
                         </p>
                         <a href="clients.html"
-                            class="group flex justify-end gap-1 items-center font-medium hover:text-pink-700 duration-300 mt-5 text-pink-700">
+                            class="group flex justify-end gap-1 items-center font-medium text-sm tracking-wide tracking-wide tracking-wide hover:text-pink-700 duration-300 mt-5 text-pink-700">
                             Who we serve
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" aria-hidden="true" viewBox="0 0 24 24"
                                 role="img"
