@@ -2,6 +2,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const nav = document.getElementById('main-nav');
     const logo = document.getElementById('nav-logo');
+    const cta = document.getElementById('nav-cta');
 
     // Logo Paths
     const logoWhite = './static/images/secm-logo-white.svg';
@@ -18,6 +19,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 logo.src = logoColor;
             }
 
+            // CTA: Switch to dark text
+            if (cta) {
+                cta.classList.remove('text-white');
+                cta.classList.add('text-slate-900');
+            }
+
         } else {
             // Top state: Transparent background, white text, no shadow
             nav.classList.add('bg-transparent', 'text-white');
@@ -26,6 +33,12 @@ document.addEventListener('DOMContentLoaded', () => {
             // Swap to White Logo
             if (logo && logo.src.indexOf('secm-logo-white.svg') === -1) {
                 logo.src = logoWhite;
+            }
+
+            // CTA: Switch to white text
+            if (cta) {
+                cta.classList.remove('text-slate-900');
+                cta.classList.add('text-white');
             }
         }
     };
