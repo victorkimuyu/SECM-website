@@ -25,9 +25,14 @@ document.addEventListener('DOMContentLoaded', () => {
         // Close mobile menu on scroll
         closeMobileMenu();
 
-        if (window.scrollY > 50) {
-            // Scrolled state: White background, dark text, shadow
-            nav.classList.remove('bg-white/10', 'text-white');
+        const isTransparentMode = nav.dataset.navTransparent === 'true';
+
+        if (window.scrollY > 50 || !isTransparentMode) {
+            // Scrolled state or Solid mode: White background, dark text, shadow
+            nav.classList.remove('text-white');
+            if (isTransparentMode) {
+                nav.classList.remove('bg-transparent');
+            }
             nav.classList.add('bg-white', 'text-slate-900', 'shadow-md');
 
             // CTA: Switch to dark text
@@ -48,7 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
         } else {
-            // Top state: Transparent background, white text, no shadow
+            // Top state in Transparent mode: Transparent background, white text, no shadow
             nav.classList.add('bg-transparent', 'text-white');
             nav.classList.remove('bg-white', 'text-slate-900', 'shadow-md');
 
